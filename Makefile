@@ -7,7 +7,7 @@ RUN=docker run --rm \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 
 build:
-	pwd
+	echo $(PWD)
 	ls -al
 	@$(RUN) --entrypoint pwd gcr.io/cloud-builders/glide
 	@$(RUN) --entrypoint ls gcr.io/cloud-builders/glide -al
