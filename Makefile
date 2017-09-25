@@ -9,4 +9,4 @@ RUN=docker run --rm \
 build:
 	$(PWD)
 	@$(RUN) --entrypoint pwd gcr.io/cloud-builders/glide
-	@$(RUN) --entrypoint ls gcr.io/cloud-builders/glide
+	@$(RUN) --entrypoint ls gcr.io/cloud-builders/glide -al
