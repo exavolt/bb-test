@@ -2,7 +2,7 @@ SVC=github.com/exavolt/bb-test
 
 RUN=docker run --rm \
 	-e PROJECT_ROOT=$(SVC) \
-	-v /workspace:/workspace/$(SVC) \
+	-v /workspace/test-iam-builder/build:/workspace/$(SVC) \
 	-w /workspace/$(SVC) \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 
